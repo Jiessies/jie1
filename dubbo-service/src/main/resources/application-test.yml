@@ -1,0 +1,50 @@
+server:
+  port: 8100
+#应用名称
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    initial-size: 1
+    max-active: 20
+    max-open-prepared-statements: 20
+    maxWait: 60000
+    min-evictable-idle-time-millis: 300000
+    min-idle: 5
+    password: 123456
+    pool-prepared-statements: false
+    test-on-borrow: false
+    test-on-return: false
+    test-while-idle: true
+    time-between-eviction-runs-millis: 60000
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    validation-query: SELECT 'x'
+  dubbo:
+    application:
+#注册在注册中心的名称，唯一标识，请勿重复
+      id: dubbo-service
+      name: dubbo-service
+#注册中心地址，zookeeper集群，启动输出可以看见链接了多个
+#单zookeeper服务：zookeeper://127.0.0.1:2181
+    registry:   #
+      address: zookeeper://127.0.0.1:2181
+     # address: zookeeper://192.168.128.13:2181?backup=192.168.128.24:2181,192.168.128.25:2181
+#暴露服务方式
+    protocol:
+      id: dubbo
+#默认名称，勿修改
+      name: dubbo
+#暴露服务端口 （默认是20880，修改端口，不同的服务提供者端口不能重复）
+      port: 20881
+      status : server
+#调用dubbo组建扫描的项目路径
+    scan: com.demo1.dubboservice.impl
+
+# mybatis
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+

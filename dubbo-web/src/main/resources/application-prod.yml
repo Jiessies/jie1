@@ -1,0 +1,21 @@
+#spring.application.name=dubbo-consumer
+server:
+  port: 8102
+#应用名称
+spring:
+  dubbo:
+    application:
+      name: dubbo-web
+#注册中心地址
+    protocol:
+      name: dubbo
+    registry:
+      address: zookeeper://127.0.0.1:2181
+#调用dubbo组建扫描的项目路径
+    scan: com.demo1.dubboweb.controller
+#telnet端口
+    qos:
+      port: 22223
+#检查服务是否可用默认为true，不可用时抛出异常，阻止spring初始化，为方便部署，可以改成false
+    consumer:
+      check: false 

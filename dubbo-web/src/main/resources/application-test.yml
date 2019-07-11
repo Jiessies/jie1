@@ -1,0 +1,39 @@
+#spring.application.name=dubbo-consumer
+server:
+  port: 8102
+#应用名称
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      initial-size: 1
+      max-active: 20
+      max-open-prepared-statements: 20
+      maxWait: 60000
+      min-evictable-idle-time-millis: 300000
+      min-idle: 5
+      password: 123456
+      pool-prepared-statements: false
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000
+      type: com.alibaba.druid.pool.DruidDataSource
+      url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+      username: root
+      validation-query: SELECT 'x'
+  dubbo:
+    application:
+      name: dubbo-web
+#注册中心地址
+    protocol:
+      name: dubbo
+    registry:
+      address: zookeeper://127.0.0.1:2181
+#调用dubbo组建扫描的项目路径
+    scan: com.demo1.dubboweb.controller
+#telnet端口
+    qos:
+      port: 22223
+#检查服务是否可用默认为true，不可用时抛出异常，阻止spring初始化，为方便部署，可以改成false
+    consumer:
+      check: false 

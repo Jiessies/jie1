@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dao" />
+        <module name="demo-service" />
+        <module name="demo-web" />
+        <module name="domain" />
+        <module name="dubbo-facade" />
+        <module name="dubbo-service" />
+        <module name="dubbo-web" />
+        <module name="jietest-spring-boot-starter" />
+        <module name="mutisource-web" />
+        <module name="service" />
+        <module name="test-es" />
+        <module name="test-mongo" />
+        <module name="utils" />
+        <module name="web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="appletapi-spring-boot-starter" target="1.8" />
+      <module name="dubbo-consumer" target="1.8" />
+      <module name="dubbo-hystrix-support" target="1.7" />
+      <module name="dubbo-service (1) (com.jiespace)" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

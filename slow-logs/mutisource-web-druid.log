@@ -1,0 +1,16 @@
+2019-07-10 10:59:04.470 [RMI TCP Connection(2)-10.9.6.80] ERROR c.a.druid.filter.stat.StatFilter - slow sql 91 millis. /* ping */ SELECT 1[]
+2019-07-10 10:59:35.304 [http-nio-8088-exec-8] ERROR c.a.druid.filter.stat.StatFilter - slow sql 32 millis. insert into user
+     ( user_name,
+      
+      
+        password,
+      
+      
+        phone ) 
+     values ( ?,
+      
+      
+        ?,
+      
+      
+        ? )["用户名","123443","133443545"]

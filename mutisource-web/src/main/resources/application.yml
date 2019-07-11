@@ -1,0 +1,79 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      write:
+        url: jdbc:mysql://127.0.0.1:3306/ordercenter?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+        username: root
+        password: 123456
+      read:
+        url: jdbc:mysql://127.0.0.1:3306/ordercenter_1?useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull
+        username: root
+        password: 123456
+      initial-size: 1
+      max-active: 20
+      max-open-prepared-statements: 20
+      maxWait: 60000
+      min-evictable-idle-time-millis: 300000
+      min-idle: 5
+      pool-prepared-statements: false
+      test-on-borrow: false
+      test-on-return: false
+      test-while-idle: true
+      time-between-eviction-runs-millis: 60000
+      validation-query: SELECT 'x'
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: false
+        login-password: 123456
+        login-username: admin
+        allow: 127.0.0.1
+        deny: 192.168.32.139 #访问黑名单
+      filter:
+        stat:
+          db-type: mysql
+          log-slow-sql: true
+          slow-sql-millis: 30
+        wall:
+          enabled: true
+          db-type: mysql
+          config:
+            delete-allow: false
+            drop-table-allow: false
+
+mybatis:
+  type-aliases-package: com.demo1.mutisourceweb.domain
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    default-fetch-size: 100
+    default-statement-timeout: 3000
+    log-impl: org.apache.ibatis.logging.commons.JakartaCommonsLoggingImpl
+
+
+logging:
+  config: classpath:logback-spring-test.xml
+  level:
+    com:
+      alibaba:
+        druid: debug
+      demo1:
+        dubboservice:
+          mapper: debug
+    org:
+      mybatis: debug
+
+example:
+  service:
+    enabled: true
+    prefix: '####'
+    suffix: '@@@@'

@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: spring-boot-mongo
+  data:
+    mongodb:
+      uri: mongodb://localhost/test
+      username: test
+      password: 123456
+
+server:
+  port: 8083

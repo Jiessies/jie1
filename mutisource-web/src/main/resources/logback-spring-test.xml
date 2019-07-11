@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds">
+
+    <!-- 日志存放的路径  -->
+    <property name="LOG_HOME" value="/data/logs" />
+
+    <!--APP名-->
+    <property name="APP_NAME" value="mutisource-web" />
+
+    <!-- 控制台输出日志 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="file-debug" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+        <rollingPolicy name="file"
+          class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}/${APP_NAME}_debug_%d{yyyyMMdd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="file_info" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <rollingPolicy name="file"
+          class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}/${APP_NAME}_info_%d{yyyyMMdd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="file_error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <rollingPolicy name="file"
+          class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}/${APP_NAME}_error_%d{yyyyMMdd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <!--<appender name="email" class="ch.qos.logback.classic.net.SMTPAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <SMTPHost>smtp.163.com</SMTPHost>
+        <smtpPort>25</smtpPort>
+        <To>maqiang@yktour.com.cn,huangmingjie@yktour.com.cn,luning@yktour.com.cn,sunyue@yktour.com.cn,songchengrui@yktour.com.cn,wuxingyu@yktour.com.cn</To>
+        <from>18612463258@163.com</from>
+        <Subject>Error in system: %logger{20} - %m</Subject>
+        <Username>18612463258@163.com</Username>
+        <Password>naonao,,..113</Password>
+        <asynchronousSending>true</asynchronousSending>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <Pattern>%date %-5level %logger{35} - %message%n</Pattern>
+        </layout>
+    </appender>-->
+
+    <!-- analysis begin-->
+    <appender name="sync_analysis_log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}/${APP_NAME}-analysis.%d{yyyyMMdd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="async_analysis" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>512</queueSize>
+        <appender-ref ref="sync_analysis_log" />
+    </appender>
+
+    <logger name="sync_analysis_log" additivity="true">
+        <appender-ref ref="async_analysis" />
+    </logger>
+    <!-- analysis end-->
+
+    <!-- outgoing begin-->
+    <appender name="bis_outgoing_log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}/${APP_NAME}-outgoing.%d{yyyyMMdd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="bis_outgoing" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>512</queueSize>
+        <appender-ref ref="bis_outgoing_log" />
+    </appender>
+
+    <logger name="bis_outgoing_log" additivity="true">
+        <appender-ref ref="bis_outgoing" />
+    </logger>
+    <!-- outgoing end-->
+
+    <!-- druid-slowsql begin-->
+    <appender name="druid-slowsql-log" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>slow-logs/mutisource-web-druid.log</file>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/${APP_NAME}/${APP_NAME}-druid.%d{yyyyMMdd}.log</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="slowsql-log" class="ch.qos.logback.classic.AsyncAppender">
+        <discardingThreshold>0</discardingThreshold>
+        <queueSize>512</queueSize>
+        <appender-ref ref="druid-slowsql-log" />
+    </appender>
+
+    <logger name="druid-slowsql-log" additivity="true">
+        <appender-ref ref="slowsql-log" />
+    </logger>
+
+    <logger name="com.alibaba.druid.filter.stat.StatFilter" level="ERROR">
+        <appender-ref ref="druid-slowsql-log" />
+    </logger>
+    <!-- druid-slowsql end-->
+
+    <logger name="org.springframework" level="debug"/>
+    <!--<logger name="org.springframework.beans" level="debug"/>-->
+
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="file_info"/>
+        <appender-ref ref="file_error"/>
+        <!--<appender-ref ref="email"/>-->
+    </root>
+</configuration>
