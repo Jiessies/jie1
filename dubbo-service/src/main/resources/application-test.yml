@@ -27,8 +27,9 @@ spring:
       name: dubbo-service
 #注册中心地址，zookeeper集群，启动输出可以看见链接了多个
 #单zookeeper服务：zookeeper://127.0.0.1:2181
+    server: true
     registry:   #
-      address: zookeeper://127.0.0.1:2181
+      address:  zookeeper://127.0.0.1:2181
      # address: zookeeper://192.168.128.13:2181?backup=192.168.128.24:2181,192.168.128.25:2181
 #暴露服务方式
     protocol:
@@ -36,7 +37,7 @@ spring:
 #默认名称，勿修改
       name: dubbo
 #暴露服务端口 （默认是20880，修改端口，不同的服务提供者端口不能重复）
-      port: 20881
+      port: 20880
       status : server
 #调用dubbo组建扫描的项目路径
     scan: com.demo1.dubboservice.impl
@@ -46,5 +47,17 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   configuration:
     map-underscore-to-camel-case: true
+  type-aliases-package: com.demo1.dubbofacade.domain
 
+logging:
+  config: classpath:logback-spring-test.xml
+  level:
+    com:
+      alibaba:
+        druid: debug
+      demo1:
+        dubboservice:
+          mapper: debug
+    org:
+      mybatis: debug
 
