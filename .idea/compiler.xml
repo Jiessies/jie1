@@ -17,6 +17,7 @@
         <module name="mutisource-web" />
         <module name="service" />
         <module name="test-es" />
+        <module name="test-hystrix" />
         <module name="test-mongo" />
         <module name="utils" />
         <module name="web" />

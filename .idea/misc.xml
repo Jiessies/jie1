@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/test-es/pom.xml" />
         <option value="$PROJECT_DIR$/demo-web/pom.xml" />
         <option value="$PROJECT_DIR$/demo-service/pom.xml" />
+        <option value="$PROJECT_DIR$/test-hystrix/pom.xml" />
       </list>
     </option>
   </component>
