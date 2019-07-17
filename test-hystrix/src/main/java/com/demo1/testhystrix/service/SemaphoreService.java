@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class SemaphoreService {
 
-    @HystrixCommand(fallbackMethod = "hiFail", commandProperties = {
+    @HystrixCommand(fallbackMethod = "hiFail", ignoreExceptions = ArithmeticException.class, commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500"),
             @HystrixProperty(name = "execution.isolation.semaphore.maxConcurrentRequests", value = "9"),
             @HystrixProperty(name = "fallback.isolation.semaphore.maxConcurrentRequests", value = "20"),
@@ -15,8 +15,9 @@ public class SemaphoreService {
     })
     public String hi(String name) {
         try {
+//            int i= 1/0;
             Thread.sleep(5);
-        } catch (InterruptedException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return "hi " + name;
