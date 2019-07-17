@@ -19,6 +19,7 @@
         <module name="test-es" />
         <module name="test-hystrix" />
         <module name="test-mongo" />
+        <module name="test-nacos" />
         <module name="test-zuul" />
         <module name="utils" />
         <module name="web" />
