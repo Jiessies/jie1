@@ -1,0 +1,19 @@
+
+server:
+  port: 8102
+
+zuul:
+  host:
+    connect-timeout-millis: 5000
+    socket-timeout-millis: 60000
+    max-per-route-connections: 200
+    max-total-connections: 3000
+  routes:
+    aaa:
+      path: /**/hys/**
+      url: http://localhost:8101/
+    bbb:
+      path: /**/hys2/**
+      url: http://localhost:8101/
+
+#      http://localhost:8101/hys/semap?name=huangmingjei
