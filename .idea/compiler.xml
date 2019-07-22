@@ -15,11 +15,13 @@
         <module name="dubbo-web" />
         <module name="jietest-spring-boot-starter" />
         <module name="mutisource-web" />
+        <module name="mybatis-plus" />
         <module name="service" />
         <module name="test-es" />
         <module name="test-hystrix" />
         <module name="test-mongo" />
         <module name="test-nacos" />
+        <module name="test-zklock" />
         <module name="test-zuul" />
         <module name="utils" />
         <module name="web" />

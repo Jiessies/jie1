@@ -26,6 +26,8 @@
         <option value="$PROJECT_DIR$/test-hystrix/pom.xml" />
         <option value="$PROJECT_DIR$/test-zuul/pom.xml" />
         <option value="$PROJECT_DIR$/test-nacos/pom.xml" />
+        <option value="$PROJECT_DIR$/test-zklock/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis-plus/pom.xml" />
       </list>
     </option>
   </component>
