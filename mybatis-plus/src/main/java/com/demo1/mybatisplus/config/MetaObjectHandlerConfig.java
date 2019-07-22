@@ -1,3 +1,4 @@
+/*
 package com.demo1.mybatisplus.config;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
@@ -27,3 +28,4 @@ public class MetaObjectHandlerConfig extends MetaObjectHandler {
         }
     }
 }
+*/

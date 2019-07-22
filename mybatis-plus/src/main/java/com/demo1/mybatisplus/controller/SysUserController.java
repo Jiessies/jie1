@@ -1,6 +1,7 @@
 package com.demo1.mybatisplus.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.demo1.mybatisplus.mode.SysUser;
@@ -22,12 +23,12 @@ public class SysUserController {
 
 
     @GetMapping(value = "/test")
-    public void test(){
+    public IPage<SysUser> test(){
         //测试逻辑删除功能
-        SysUser sysUser = (SysUser) sysUserService.selectById(1);
+//        SysUser sysUser = sysUserService.getById(1);
 
         //测试分页
-        IPage<SysUser> sysUserIPage = sysUserService.selectPage(
+        IPage<SysUser> sysUserIPage = sysUserService.page(
                 new Page<SysUser>(1, 10), new QueryWrapper<>());
 
 
@@ -36,7 +37,7 @@ public class SysUserController {
         sysUser1.setUsername("shen");
         sysUser1.setNickname("shen");
         sysUser1.setPassword("shen");
-        sysUserService.insert(sysUser1);
+        sysUserService.save(sysUser1);
 
         //测试乐观锁
         SysUser sysUser2 = new SysUser();
@@ -47,6 +48,8 @@ public class SysUserController {
         sysUser2.setUpdateVersion(1);
 
         sysUserService.updateById(sysUser2);
+
+        return sysUserIPage;
 
     }
 
@@ -93,7 +96,7 @@ public class SysUserController {
         sysUser5.setUpdateVersion(1);
         list.add(sysUser5);
 
-        Boolean b = sysUserService.insertOrUpdateBatch(list, 3);
+        Boolean b = sysUserService.saveOrUpdateBatch(list, 3);
         return String.valueOf(b);
     }
 
@@ -121,7 +124,9 @@ public class SysUserController {
 
 
         Boolean b = sysUserService.updateBatchById(list);
+//        sysUserService.update(sysUser, new UpdateWrapper<SysUser>())
         return String.valueOf(b);
 
     }
+
 }
