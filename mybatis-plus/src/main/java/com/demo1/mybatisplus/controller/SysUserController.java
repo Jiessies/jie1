@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @RestController
 @RequestMapping(value = "/sysUser")
@@ -93,8 +94,34 @@ public class SysUserController {
         list.add(sysUser5);
 
         Boolean b = sysUserService.insertOrUpdateBatch(list, 3);
-
         return String.valueOf(b);
     }
 
+    @GetMapping(value = "/update")
+    public String updateBatch(){
+
+
+        List list = new ArrayList();
+        SysUser sysUser = new SysUser();
+        sysUser.setId(18);
+        sysUser.setUsername("huangmingjie");
+        list.add(sysUser);
+
+        SysUser sysUser2 = new SysUser();
+        sysUser2.setId(19);
+        sysUser2.setUsername("huangmingjie");
+        list.add(sysUser2);
+
+
+        SysUser sysUser3 = new SysUser();
+        sysUser3.setId(20);
+        sysUser3.setUsername("huangmingjie");
+        list.add(sysUser3);
+
+
+
+        Boolean b = sysUserService.updateBatchById(list);
+        return String.valueOf(b);
+
+    }
 }
