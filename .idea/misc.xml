@@ -28,6 +28,7 @@
         <option value="$PROJECT_DIR$/test-nacos/pom.xml" />
         <option value="$PROJECT_DIR$/test-zklock/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/test-design/pom.xml" />
       </list>
     </option>
   </component>
