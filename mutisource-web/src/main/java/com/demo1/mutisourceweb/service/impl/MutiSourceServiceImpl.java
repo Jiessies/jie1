@@ -1,5 +1,6 @@
 package com.demo1.mutisourceweb.service.impl;
 
+import com.demo1.mutisourceweb.config.aop.DataSourceTypeAnnotation;
 import com.demo1.mutisourceweb.domain.User;
 import com.demo1.mutisourceweb.mapper.MutiSourceMapper;
 import com.demo1.mutisourceweb.service.MutiSourceService;
@@ -13,11 +14,13 @@ public class MutiSourceServiceImpl implements MutiSourceService {
     private MutiSourceMapper mutiSourceMapper;
 
     @Override
+    @DataSourceTypeAnnotation(value = "WRITE")
     public Object addUser(User user) {
         return mutiSourceMapper.insertSelective(user);
     }
 
     @Override
+    @DataSourceTypeAnnotation(value = "READ")
     public Object selectAllUser() {
         return mutiSourceMapper.selectAllUser();
     }
