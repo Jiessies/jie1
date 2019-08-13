@@ -14,13 +14,12 @@ public class MutiSourceServiceImpl implements MutiSourceService {
     private MutiSourceMapper mutiSourceMapper;
 
     @Override
-    @DataSourceTypeAnnotation(value = "WRITE")
     public Object addUser(User user) {
         return mutiSourceMapper.insertSelective(user);
     }
 
     @Override
-    @DataSourceTypeAnnotation(value = "READ")
+//    @DataSourceTypeAnnotation(value = "READ")
     public Object selectAllUser() {
         return mutiSourceMapper.selectAllUser();
     }

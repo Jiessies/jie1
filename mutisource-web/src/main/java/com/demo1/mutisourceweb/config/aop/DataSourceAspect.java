@@ -39,10 +39,10 @@ public class DataSourceAspect {
         MethodSignature methodSignature = (MethodSignature) point.getSignature();
         Method method = methodSignature.getMethod();
         // 获取真正调用的方法（serviceImpl）/**此处容易遗漏出错*/
-        Method relmethod = point.getTarget().getClass()
-                .getMethod(point.getSignature().getName(), method.getParameterTypes());
+//        Method relmethod = point.getTarget().getClass()
+//                .getMethod(point.getSignature().getName(), method.getParameterTypes());
         // 获取该方法(serviceImpl)上的注解
-        DataSourceTypeAnnotation annotation = relmethod.getAnnotation(DataSourceTypeAnnotation.class);
+        DataSourceTypeAnnotation annotation = method.getAnnotation(DataSourceTypeAnnotation.class);
         if (annotation != null) {
             // 设置该方法的数据源类型
             logger.info("数据源{}注解值", annotation.value());

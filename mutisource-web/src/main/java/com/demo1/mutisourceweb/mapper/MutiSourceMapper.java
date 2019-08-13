@@ -1,5 +1,6 @@
 package com.demo1.mutisourceweb.mapper;
 
+import com.demo1.mutisourceweb.config.aop.DataSourceTypeAnnotation;
 import com.demo1.mutisourceweb.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -11,6 +12,7 @@ public interface MutiSourceMapper {
 
     int insert(User record);
 
+    @DataSourceTypeAnnotation(value = "WRITE")
     int insertSelective(User record);
 
     User selectByPrimaryKey(Integer id);
@@ -20,5 +22,6 @@ public interface MutiSourceMapper {
     int updateByPrimaryKey(User record);
 
     //这个方式我自己加的
+    @DataSourceTypeAnnotation(value = "READ")
     List<User> selectAllUser();
 }
