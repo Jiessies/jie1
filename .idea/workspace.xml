@@ -1,57 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="demo-service:war exploded" />
-      <artifact name="demo-web:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="b327a1c6-0ec3-48cd-9e57-815d94705174" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adaptee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/AdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Target.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adaptee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/AdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Target.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoPublisher.java" afterDir="false" />
+    <list default="true" id="0440a58d-8579-4a46-a9e5-d7c7ca472526" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dubbo_service_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dubbo_web_war_exploded.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-plus/src/test/java/com/demo1/mybatisplus/MybatisPlusApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-plus/src/test/java/com/demo1/mybatisplus/MybatisPlusApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/src/main/resources/mapping/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dao/src/main/resources/mapping/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-facade/src/main/java/com/demo1/dubbofacade/service/DubooService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-facade/src/main/java/com/demo1/dubbofacade/service/DubooService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-service/src/main/java/com/demo1/dubboservice/controller/DubboServiceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-service/src/main/java/com/demo1/dubboservice/controller/DubboServiceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-service/src/main/resources/logback-spring-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-service/src/main/resources/logback-spring-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dubbo-web/src/main/java/com/demo1/dubboweb/controller/DubboController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dubbo-web/src/main/java/com/demo1/dubboweb/controller/DubboController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jietest-spring-boot-starter/src/main/java/com/demo1/jietestspringbootstarter/api/ExampleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/jietest-spring-boot-starter/src/main/java/com/demo1/jietestspringbootstarter/api/ExampleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jietest-spring-boot-starter/src/main/java/com/demo1/jietestspringbootstarter/config/ExampleAutoConfigure.java" beforeDir="false" afterPath="$PROJECT_DIR$/jietest-spring-boot-starter/src/main/java/com/demo1/jietestspringbootstarter/config/ExampleAutoConfigure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutisource-web/src/main/java/com/demo1/mutisourceweb/config/DynamicDataSourceContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mutisource-web/src/main/java/com/demo1/mutisourceweb/config/DynamicDataSourceContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutisource-web/src/main/java/com/demo1/mutisourceweb/config/aop/DataSourceAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/mutisource-web/src/main/java/com/demo1/mutisourceweb/config/aop/DataSourceAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutisource-web/src/main/java/com/demo1/mutisourceweb/config/datasource/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mutisource-web/src/main/java/com/demo1/mutisourceweb/config/datasource/DataSourceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutisource-web/src/main/java/com/demo1/mutisourceweb/controller/MutiSourceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mutisource-web/src/main/java/com/demo1/mutisourceweb/controller/MutiSourceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutisource-web/src/main/resources/logback-spring-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mutisource-web/src/main/resources/logback-spring-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mutisource-web/src/main/resources/mapper/MutiSourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mutisource-web/src/main/resources/mapper/MutiSourceMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/controller/SysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/controller/SysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/mode/SysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/mode/SysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/src/main/java/com/demo1/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/service/src/main/java/com/demo1/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adaptee.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adaptee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adaptee.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adaptee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Target.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Target.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoPublisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoPublisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-es/src/main/java/com/demo1/testes/controller/CountrySearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-es/src/main/java/com/demo1/testes/controller/CountrySearchController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-es/src/main/java/com/demo1/testes/domain/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-es/src/main/java/com/demo1/testes/domain/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-es/src/main/java/com/demo1/testes/repository/CountrySearchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-es/src/main/java/com/demo1/testes/repository/CountrySearchRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-es/src/main/java/com/demo1/testes/service/impl/CountrySearchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-es/src/main/java/com/demo1/testes/service/impl/CountrySearchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-es/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-es/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/controller/TestHystrix2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/controller/TestHystrix2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/controller/TestHystrixController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/controller/TestHystrixController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/service/SemaphoreService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/service/SemaphoreService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-mongo/src/main/java/com/demo1/testmongo/TestMongoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-mongo/src/main/java/com/demo1/testmongo/TestMongoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-mongo/src/main/java/com/demo1/testmongo/repository/AuthorityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-mongo/src/main/java/com/demo1/testmongo/repository/AuthorityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-mongo/src/main/java/com/demo1/testmongo/service/AuthorityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-mongo/src/main/java/com/demo1/testmongo/service/AuthorityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-mongo/src/main/java/com/demo1/testmongo/service/impl/AuthorityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-mongo/src/main/java/com/demo1/testmongo/service/impl/AuthorityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-nacos/src/main/java/com/demo1/testnacos/controller/NacosController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-nacos/src/main/java/com/demo1/testnacos/controller/NacosController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/config/ZookeeperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/config/ZookeeperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/controller/ZkLockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/controller/ZkLockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/BaseLockHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/BaseLockHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ShardReentrantLockComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ShardReentrantLockComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ZkLockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ZkLockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/src/main/java/com/demo1/utils/R.java" beforeDir="false" afterPath="$PROJECT_DIR$/utils/src/main/java/com/demo1/utils/R.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/com/demo1/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/com/demo1/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/resources/generator/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/resources/generator/generatorConfig.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/mutisource-web/target/" />
     <ignored path="$PROJECT_DIR$/dao/target/" />
-    <ignored path="$PROJECT_DIR$/web/target/" />
-    <ignored path="$PROJECT_DIR$/service/target/" />
-    <ignored path="$PROJECT_DIR$/domain/target/" />
+    <ignored path="$PROJECT_DIR$/dubbo-web/target/" />
     <ignored path="$PROJECT_DIR$/utils/target/" />
+    <ignored path="$PROJECT_DIR$/web/target/" />
+    <ignored path="$PROJECT_DIR$/domain/target/" />
     <ignored path="$PROJECT_DIR$/dubbo-facade/target/" />
     <ignored path="$PROJECT_DIR$/dubbo-service/target/" />
-    <ignored path="$PROJECT_DIR$/dubbo-web/target/" />
-    <ignored path="$USER_HOME$/zxmt/dubbo-service/target/" />
-    <ignored path="$USER_HOME$/zxmt/dubbo-consumer/target/" />
-    <ignored path="$USER_HOME$/zxmt/dubbo-hystrix-support/target/" />
-    <ignored path="$USER_HOME$/zxmt/appletapi-spring-boot-starter/target/" />
-    <ignored path="$PROJECT_DIR$/mutisource-web/target/" />
+    <ignored path="$PROJECT_DIR$/service/target/" />
     <ignored path="$PROJECT_DIR$/jietest-spring-boot-starter/target/" />
-    <ignored path="$PROJECT_DIR$/test-mongo/target/" />
-    <ignored path="$PROJECT_DIR$/test-es/target/" />
-    <ignored path="$PROJECT_DIR$/demo-web/target/" />
-    <ignored path="$PROJECT_DIR$/demo-service/target/" />
-    <ignored path="$PROJECT_DIR$/test-hystrix/target/" />
-    <ignored path="$PROJECT_DIR$/test-zuul/target/" />
-    <ignored path="$PROJECT_DIR$/test-nacos/target/" />
-    <ignored path="$PROJECT_DIR$/test-zklock/target/" />
-    <ignored path="$PROJECT_DIR$/mybatis-plus/target/" />
-    <ignored path="$PROJECT_DIR$/test-design/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,141 +90,24 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application-test.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/resources/application-test.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DubboWebApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-web/src/main/java/com/demo1/dubboweb/DubboWebApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="39" column="29" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dubbo-facade/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DubboFacadeApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-facade/src/main/java/com/demo1/dubbofacade/DubboFacadeApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-facade/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="application-prod.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/resources/application-prod.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2413">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="454">
+              <caret line="128" column="10" selection-start-line="128" selection-start-column="10" selection-end-line="128" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-web/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="application-test.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dubbo-web/src/main/resources/application-test.yml">
+      <file leaf-file-name="jie1.iml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jie1.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-            </state>
+            <state relative-caret-position="-240" />
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin File" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>file_info</find>
-      <find>AsyncAppender</find>
-      <find>druid-spring</find>
-      <find>bis_outgoing</find>
-      <find>lom</find>
-      <find>8103</find>
-      <find>ConfigurationProperties</find>
-      <find>BaseLockHandler</find>
-      <find>server</find>
-      <find>8102</find>
-      <find>8101</find>
-      <find>8104</find>
-      <find>selectById</find>
-      <find>Unimplemented</find>
-      <find>无法使用以下不同的参数继承</find>
-      <find>com.mysql.cj.jdbc.Driver</find>
-      <find>initialize(sources)</find>
-      <find>ConfigurableApplicationContext</find>
-      <find>initialize</find>
-      <find>setInitializers</find>
-      <find>setListeners</find>
-      <find>org.springframework.web.reactive.DispatcherHandler</find>
-      <find>ApplicationContextInitializer</find>
-      <find>getSpringFactoriesInstances</find>
-      <find>addApplicationListener</find>
-      <find>onApplicationEnvironmentPreparedEvent</find>
-      <find>publishEvent</find>
-      <find>lombok</find>
-      <find>22222</find>
-      <find>8100</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/dubbo-service/src/main/java/com/demo1/dubboservice/impl</dir>
-      <dir>$USER_HOME$/zxmt/dubbo-service</dir>
-      <dir>$PROJECT_DIR$/mutisource-web</dir>
-      <dir>$PROJECT_DIR$/mybatis-plus</dir>
-      <dir>$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot</dir>
-      <dir>$PROJECT_DIR$</dir>
-      <dir>$PROJECT_DIR$/dubbo-service</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -217,57 +116,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test-hystrix/pom.xml" />
-        <option value="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/TestHystrixApplication.java" />
-        <option value="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/controller/TestHystrixController.java" />
-        <option value="$PROJECT_DIR$/test-zuul/src/main/java/com/demo1/testzuul/TestZuulApplication.java" />
-        <option value="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/controller/TestHystrix2Controller.java" />
-        <option value="$PROJECT_DIR$/test-zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/test-zuul/src/main/java/com/demo1/testzuul/filter/TokenFilter.java" />
-        <option value="$PROJECT_DIR$/test-zuul/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/test-nacos/pom.xml" />
-        <option value="$PROJECT_DIR$/test-nacos/src/main/java/com/demo1/testnacos/TestNacosApplication.java" />
-        <option value="$PROJECT_DIR$/test-nacos/src/main/java/com/demo1/testnacos/controller/NacosController.java" />
-        <option value="$PROJECT_DIR$/test-nacos/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/service/HystrixService.java" />
-        <option value="$PROJECT_DIR$/test-hystrix/src/main/java/com/demo1/testhystrix/service/SemaphoreService.java" />
-        <option value="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/config/ZookeeperProperties.java" />
-        <option value="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/config/ZookeeperConfig.java" />
-        <option value="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/BaseLockHandler.java" />
-        <option value="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ShardReentrantLockComponent.java" />
-        <option value="$PROJECT_DIR$/test-zklock/src/test/java/com/demo1/testzklock/test/LockComponentTest.java" />
-        <option value="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/controller/ZkLockController.java" />
-        <option value="$PROJECT_DIR$/dubbo-service/src/main/java/com/demo1/dubboservice/DubboServiceApplication.java" />
-        <option value="$PROJECT_DIR$/test-zklock/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ZkLockService.java" />
-        <option value="$PROJECT_DIR$/test-zklock/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/config/MybatisPlusConfig.java" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/mode/SysUser.java" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/resources/mapper/SysUserMapper.xml" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/service/impl/SysUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/service/SysUserService.java" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/mapper/SysUserMapper.java" />
-        <option value="$PROJECT_DIR$/mybatis-plus/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/config/MetaObjectHandlerConfig.java" />
-        <option value="$PROJECT_DIR$/demo-web/src/main/java/com/demo1/demoweb/controller/DubboController.java" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/main/java/com/demo1/mybatisplus/controller/SysUserController.java" />
-        <option value="$PROJECT_DIR$/mybatis-plus/src/test/java/com/demo1/mybatisplus/MybatisPlusApplicationTests.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adaptee.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Target.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adapter.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/AdapterTest.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/event/DemoEvent.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/event/TestEvent.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/event/DemoPublisher.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/event/DemoListener.java" />
-        <option value="$PROJECT_DIR$/test-design/src/main/java/com/demo1/testdesign/event/TestEvent.java" />
-        <option value="$PROJECT_DIR$/test-design/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/test-design/src/main/java/com/demo1/testdesign/event/TestEventController.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adapter.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/AdapterTest.java" />
-        <option value="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/TestDesignApplicationTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -276,13 +125,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -300,23 +142,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dubbo-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dubbo-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="dubbo-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-          <item name="com.demo1:dubbo-facade:0.0.1-SNAPSHOT" type="c0821a7e:MavenProjectsStructure$DependencyNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -324,74 +150,40 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="827" />
+    <option name="height" value="900" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="jie1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-mq" type="b2602c69:ProjectViewProjectNode" />
               <item name="jie1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jie1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jie1" type="462c0819:PsiDirectoryNode" />
-              <item name="dubbo-service" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="publishEvent&#9;PSI&#9;JAVA://org.springframework.context.support.AbstractApplicationContext#publishEvent&#10;ContextStartedEvent&#9;PSI&#9;JAVA://org.springframework.context.event.ContextStartedEvent&#10;AbstractApplicationContext&#9;PSI&#9;JAVA://org.springframework.context.support.AbstractApplicationContext&#10;AbstractLoadBalance&#9;PSI&#9;JAVA://com.alibaba.dubbo.rpc.cluster.loadbalance.AbstractLoadBalance&#10;ConfigFileApplicationListener&#9;PSI&#9;JAVA://org.springframework.boot.context.config.ConfigFileApplicationListener&#10;AbstractEnvironment&#9;FILE&#9;jar:///Users/huangmingjie/.m2/respositoryAll/org/springframework/spring-core/5.1.8.RELEASE/spring-core-5.1.8.RELEASE.jar!/org/springframework/core/env/AbstractEnvironment.class&#10;LoggingApplicationListener&#9;PSI&#9;JAVA://org.springframework.boot.context.logging.LoggingApplicationListener&#10;Logging&#9;FILE&#9;jar:///Users/huangmingjie/.m2/respositoryAll/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/context/logging/ClasspathLoggingApplicationListener.class&#10;EventPublishingRunListener&#9;FILE&#9;jar:///Users/huangmingjie/.m2/respositoryAll/org/springframework/boot/spring-boot/2.1.6.RELEASE/spring-boot-2.1.6.RELEASE.jar!/org/springframework/boot/context/event/EventPublishingRunListener.class" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15429688" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.demo1.testdesign" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.demo1.demoservice.controller" />
-      <recent name="com.demo1.demoweb.controller" />
-      <recent name="com.demo1.testes.mapper" />
-      <recent name="com.demo1.testes.mode" />
-      <recent name="com.demo1.jietestspringbootstarter.api" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter" />
-      <recent name="$PROJECT_DIR$/test-design/src/main/java/com/demo1/testdesign" />
-      <recent name="$PROJECT_DIR$/mybatis-plus/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/test-es/src/main/resources/mapper" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -405,43 +197,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.DubboWebApplication">
-    <configuration name="AdapterTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.demo1.testdesign.adapter.objectadapter.AdapterTest" />
-      <module name="test-design" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo1.testdesign.adapter.objectadapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.UtilsApplication">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-    </configuration>
-    <configuration name="TestDesignApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test-design" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo1.testdesign.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.demo1.testdesign" />
-      <option name="MAIN_CLASS_NAME" value="com.demo1.testdesign.TestDesignApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -459,53 +217,9 @@
       </option>
       <patterns />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="appletapi-spring-boot-starter" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-    </configuration>
-    <configuration name="tj-admin" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="clean" />
-                <option value="install" />
-                <option value="-Dmaven.test.skip=true" />
-              </list>
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/dubbo-web" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-    </configuration>
     <configuration name="DaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="dao" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.dao.DaoApplication" />
-    </configuration>
-    <configuration name="DemoServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo-service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.demoservice.DemoServiceApplication" />
-    </configuration>
-    <configuration name="DemoWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo-web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.demoweb.DemoWebApplication" />
     </configuration>
     <configuration name="DomainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="domain" />
@@ -515,51 +229,29 @@
       <module name="dubbo-facade" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.dubbofacade.DubboFacadeApplication" />
     </configuration>
-    <configuration name="DubboServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="DubboServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="dubbo-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo1.dubboservice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.dubboservice.DubboServiceApplication" />
     </configuration>
-    <configuration name="DubboWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="DubboWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="dubbo-web" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo1.dubboweb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.dubboweb.DubboWebApplication" />
+    </configuration>
+    <configuration name="MutisourceWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mutisource-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.mutisourceweb.MutisourceWebApplication" />
     </configuration>
     <configuration name="ServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.service.ServiceApplication" />
     </configuration>
-    <configuration name="TestDesignApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="test-design" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demo1.testdesign.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.testdesign.TestDesignApplication" />
-    </configuration>
     <configuration name="UtilsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="utils" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.utils.UtilsApplication" />
     </configuration>
-    <configuration name="WebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.WebApplication" />
-    </configuration>
     <configuration name="WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.web.WebApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.demo1.WebApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -583,795 +275,119 @@
       <properties />
       <listeners />
     </configuration>
-    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
-      <deployment />
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="_jie1" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55898" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-    </configuration>
-    <configuration name="demo-web" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <deployment>
-        <artifact name="demo-web:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/demo-web" />
-          </settings>
-        </artifact>
-        <artifact name="demo-service:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/demo-service" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_jie1_2" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55898" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="demo-web:war exploded" />
-          <artifact name="demo-service:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="dubbo-web" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.21" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <deployment>
-        <artifact name="dubbo-web:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/dubbo-web" />
-          </settings>
-        </artifact>
-        <artifact name="dubbo-service:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/dubbo-service" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_jie1" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="55898" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="dubbo-web:war exploded" />
-          <artifact name="dubbo-service:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Maven.tj-admin" />
+      <item itemvalue="Spring Boot.UtilsApplication" />
       <item itemvalue="Spring Boot.WebApplication" />
+      <item itemvalue="Spring Boot.MutisourceWebApplication" />
+      <item itemvalue="Spring Boot.DubboWebApplication" />
       <item itemvalue="Spring Boot.ServiceApplication" />
       <item itemvalue="Spring Boot.DaoApplication" />
       <item itemvalue="Spring Boot.DomainApplication" />
-      <item itemvalue="Spring Boot.UtilsApplication" />
-      <item itemvalue="Spring Boot.DubboFacadeApplication" />
-      <item itemvalue="Spring Boot.WebApplication (1)" />
-      <item itemvalue="Spring Boot.DemoWebApplication" />
-      <item itemvalue="Spring Boot.DemoServiceApplication" />
-      <item itemvalue="Tomcat Server.demo-web" />
-      <item itemvalue="Tomcat Server.dubbo-web" />
-      <item itemvalue="JUnit.TestDesignApplicationTests.contextLoads" />
-      <item itemvalue="Spring Boot.TestDesignApplication" />
-      <item itemvalue="Application.AdapterTest (1)" />
       <item itemvalue="Spring Boot.DubboServiceApplication" />
-      <item itemvalue="Spring Boot.DubboWebApplication" />
+      <item itemvalue="Spring Boot.DubboFacadeApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.DubboWebApplication" />
-        <item itemvalue="Spring Boot.DubboServiceApplication" />
-        <item itemvalue="JUnit.TestDesignApplicationTests.contextLoads" />
-        <item itemvalue="Application.AdapterTest (1)" />
-        <item itemvalue="Spring Boot.TestDesignApplication" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b327a1c6-0ec3-48cd-9e57-815d94705174" name="Default" comment="" />
-      <created>1562118326097</created>
+      <changelist id="0440a58d-8579-4a46-a9e5-d7c7ca472526" name="Default" comment="" />
+      <created>1565855044378</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1562118326097</updated>
-      <workItem from="1562118335557" duration="54037000" />
-      <workItem from="1562660363230" duration="11628000" />
-      <workItem from="1562744779997" duration="19000" />
-      <workItem from="1562827087257" duration="5507000" />
-      <workItem from="1563244443598" duration="14043000" />
-      <workItem from="1563415800507" duration="31374000" />
-      <workItem from="1564972319899" duration="4181000" />
-      <workItem from="1564990413151" duration="637000" />
-      <workItem from="1564991151258" duration="5056000" />
-      <workItem from="1564998187582" duration="7560000" />
-      <workItem from="1565077176893" duration="111000" />
+      <updated>1565855044378</updated>
+      <workItem from="1565855049553" duration="198000" />
     </task>
-    <task id="LOCAL-00001" summary="修改配置文件">
-      <created>1563182710618</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1563182710618</updated>
-    </task>
-    <task id="LOCAL-00002" summary="增加hys测试demo">
-      <created>1563335392535</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1563335392536</updated>
-    </task>
-    <task id="LOCAL-00003" summary="提交被落下的code">
-      <created>1563335507243</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1563335507243</updated>
-    </task>
-    <task id="LOCAL-00004" summary="增加zuul简单应用">
-      <created>1563346641680</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1563346641680</updated>
-    </task>
-    <task id="LOCAL-00005" summary="增加nacos做配置中心">
-      <created>1563348822058</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1563348822058</updated>
-    </task>
-    <task id="LOCAL-00006" summary="增加异常过滤配置">
-      <created>1563352624947</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1563352624947</updated>
-    </task>
-    <task id="LOCAL-00007" summary="配置zk与mybatis-plus">
-      <created>1563775005758</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1563775005758</updated>
-    </task>
-    <task id="LOCAL-00008" summary="增加修改方法">
-      <created>1563775654005</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1563775654006</updated>
-    </task>
-    <task id="LOCAL-00009" summary="修改MP版本">
-      <created>1563778712744</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1563778712744</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="MybatisPlusApplicationTests_contextLoads - 2019.07.30 at 09h 56m 16s.xml">
-      <configuration name="MybatisPlusApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisPlusApplicationTests_contextLoads - 2019.07.30 at 09h 57m 50s.xml">
-      <configuration name="MybatisPlusApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisPlusApplicationTests_contextLoads - 2019.07.30 at 09h 58m 42s.xml">
-      <configuration name="MybatisPlusApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisPlusApplicationTests_contextLoads - 2019.07.30 at 09h 59m 16s.xml">
-      <configuration name="MybatisPlusApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MybatisPlusApplicationTests_contextLoads - 2019.07.30 at 10h 00m 20s.xml">
-      <configuration name="MybatisPlusApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDesignApplicationTests_contextLoads - 2019.08.04 at 16h 19m 19s.xml">
-      <configuration name="TestDesignApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDesignApplicationTests_contextLoads - 2019.08.04 at 16h 27m 51s.xml">
-      <configuration name="TestDesignApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDesignApplicationTests_contextLoads - 2019.08.04 at 16h 28m 18s.xml">
-      <configuration name="TestDesignApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDesignApplicationTests_contextLoads - 2019.08.04 at 16h 29m 19s.xml">
-      <configuration name="TestDesignApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestDesignApplicationTests_contextLoads - 2019.08.04 at 17h 08m 54s.xml">
-      <configuration name="TestDesignApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134153000" />
+    <option name="totallyTimeSpent" value="198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="10" weight="0.2339394" />
-      <window_info anchor="right" id="Maven Projects" order="0" weight="0.3297568" />
-      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="8" />
-      <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Database" order="2" weight="0.3297568" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="12" weight="0.36727273" />
-      <window_info anchor="bottom" id="TODO" order="15" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="bottom" id="Run" order="11" weight="0.3660606" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="6" visible="true" weight="0.24606581" />
-      <window_info anchor="right" id="Bean Validation" order="5" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Alibaba Cloud View" order="6" />
-      <window_info id="Alibaba Cloud Explorer" order="4" weight="0.3297568" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="2" weight="0.32969698" />
-      <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="8" />
-      <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="7" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" weight="0.3297568" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info anchor="right" id="Database" weight="0.3297568" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24964234" />
+      <window_info id="UI Designer" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info id="Image Layers" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32969698" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info anchor="right" id="Bean Validation" weight="0.3297568" />
+      <window_info anchor="bottom" id="Alibaba Cloud View" />
+      <window_info id="Web" side_tool="true" />
+      <window_info id="Alibaba Cloud Explorer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="修改配置文件" />
-    <MESSAGE value="增加hys测试demo" />
-    <MESSAGE value="提交被落下的code" />
-    <MESSAGE value="增加zuul简单应用" />
-    <MESSAGE value="增加nacos做配置中心" />
-    <MESSAGE value="增加异常过滤配置" />
-    <MESSAGE value="配置zk与mybatis-plus" />
-    <MESSAGE value="增加修改方法" />
-    <MESSAGE value="修改MP版本" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改MP版本" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/controller/ZkLockController.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ZkLockService.java</url>
-          <line>27</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ZkLockService.java</url>
-          <line>40</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ZkLockService.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test-zklock/src/main/java/com/demo1/testzklock/service/ShardReentrantLockComponent.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-      </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="50" />
-    </breakpoint-manager>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Iterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis-plus/src/test/java/com/demo1/mybatisplus/MybatisPlusApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/dubbo/2.6.0/dubbo-2.6.0-sources.jar!/com/alibaba/dubbo/rpc/cluster/loadbalance/AbstractLoadBalance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-383" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/main/java/com/demo1/testdesign/event/TestEventController.java" />
-    <entry file="file://$PROJECT_DIR$/test-design/src/main/java/com/demo1/testdesign/event/DemoListener.java" />
-    <entry file="file://$PROJECT_DIR$/test-design/src/main/java/com/demo1/testdesign/event/DemoEvent.java" />
-    <entry file="file://$PROJECT_DIR$/test-design/src/main/java/com/demo1/testdesign/event/DemoPublisher.java" />
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/event/TestEvent.java" />
-    <entry file="file://$PROJECT_DIR$/test-design/src/main/java/com/demo1/testdesign/TestDesignApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Target.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adaptee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/AdapterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/classadapter/Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="54" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adaptee.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Target.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/Adapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/adapter/objectadapter/AdapterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/TestDesignApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/ConfigurableApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="15" column="62" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/ApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="14" column="142" selection-start-line="14" selection-start-column="142" selection-end-line="14" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/ApplicationEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/event/ApplicationContextEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/event/ContextStartedEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test-design/src/test/java/com/demo1/testdesign/event/DemoPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/ApplicationEventPublisher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.8.RELEASE/spring-context-5.1.8.RELEASE.jar!/org/springframework/context/support/AbstractApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="189" column="9" selection-start-line="189" selection-start-column="9" selection-end-line="189" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/resources/logback-spring-test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="136" selection-start-line="136" selection-end-line="136" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jietest-spring-boot-starter/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="45" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-web/src/main/resources/application-prod.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/java/com/demo1/dubboservice/impl/DubooServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" column="43" lean-forward="true" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-facade/src/main/java/com/demo1/dubbofacade/service/DubooService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/java/com/demo1/dubboservice/mapper/DubooMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-web/src/main/java/com/demo1/dubboweb/controller/DubboController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="33" lean-forward="true" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="45" column="29" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/java/com/demo1/dubboservice/DubboServiceApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-web/src/main/java/com/demo1/dubboweb/DubboWebApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-web/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-web/src/main/resources/application-test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="17" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-facade/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/resources/application-prod.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-service/src/main/resources/application-test.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2413">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
+        <state relative-caret-position="454">
+          <caret line="128" column="10" selection-start-line="128" selection-start-column="10" selection-end-line="128" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-facade/src/main/java/com/demo1/dubbofacade/DubboFacadeApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+    <entry file="file://$PROJECT_DIR$/HELP.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dubbo-facade/pom.xml">
+    <entry file="file://$PROJECT_DIR$/jie1.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-        </state>
+        <state relative-caret-position="-240" />
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
+      <state key="ArquillianSettingsConfigurable.UI">
         <settings>
-          <artifact-editor />
-          <last-edited>dubbo-web:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1404,19 +420,6 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>test-zklock</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -1431,7 +434,6 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

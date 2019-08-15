@@ -13,7 +13,7 @@ public class NacosController {
     private String testProperties;
 
     @GetMapping("/test")
-    public String test(){
+    public String test() {
         return testProperties;
     }
 }

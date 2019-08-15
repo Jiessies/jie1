@@ -17,8 +17,8 @@ public class MutiSourceController {
     private MutiSourceService mutiSourceService;
 
     @RequestMapping(value = "/add", produces = {"application/json;charset=UTF-8"})
-    public Object addUser(User user){
-        user= new User();
+    public Object addUser(User user) {
+        user = new User();
         user.setPhone("133443545");
         user.setPassword("123443");
         user.setUserName("用户名");
@@ -27,12 +27,12 @@ public class MutiSourceController {
 
     @GetMapping("/all")
     public Object findAllUser(@RequestParam(name = "pageNum", required = false, defaultValue = "1") int pageNum,
-                              @RequestParam(name = "pageSize", required = false, defaultValue = "10") int pageSize){
+                              @RequestParam(name = "pageSize", required = false, defaultValue = "10") int pageSize) {
         return mutiSourceService.selectAllUser();
     }
 
     @GetMapping("/combination")
-    public Object doCombination(){
+    public Object doCombination() {
         User user = new User();
         user.setPhone("133443545");
         user.setPassword("123443");

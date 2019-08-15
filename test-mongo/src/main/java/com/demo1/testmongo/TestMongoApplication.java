@@ -24,7 +24,7 @@ public class TestMongoApplication implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args){
+    public void run(String... args) {
         // 删除全部
 //        repository.deleteAll();
         // 添加一条数据

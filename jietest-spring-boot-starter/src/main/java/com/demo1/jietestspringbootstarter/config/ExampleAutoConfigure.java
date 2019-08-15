@@ -19,8 +19,8 @@ public class ExampleAutoConfigure {
 
     @Bean
     @ConditionalOnMissingBean
-    @ConditionalOnProperty(prefix = "example.service",value = "enabled",havingValue = "true")
-    ExampleService exampleService (){
-        return  new ExampleService(properties.getPrefix(),properties.getSuffix());
+    @ConditionalOnProperty(prefix = "example.service", value = "enabled", havingValue = "true")
+    ExampleService exampleService() {
+        return new ExampleService(properties.getPrefix(), properties.getSuffix());
     }
 }

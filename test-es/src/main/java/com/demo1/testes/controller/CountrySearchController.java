@@ -33,21 +33,21 @@ public class CountrySearchController {
     private TestHikariService testHikariService;
 
     @RequestMapping(value = "/getCountry")
-    public Page<Country> getCountryByName(@RequestParam String name){
+    public Page<Country> getCountryByName(@RequestParam String name) {
         return countrySearchService.getCountryByName(name);
     }
 
     @RequestMapping(value = "/addIndex")
-    public String addIndex(){
+    public String addIndex() {
         esService.createIndex(Country.class);
         return "success";
     }
 
     @RequestMapping(value = "/init")
-    public String init(){
+    public String init() {
         String resonse = StringUtils.EMPTY;
         Boolean b = esService.createIndex(User.class);
-        if(b){
+        if (b) {
             User user = new User();
             user.setCreateDate(new Date());
             user.setPassword("12345678");
@@ -55,12 +55,12 @@ public class CountrySearchController {
             user.setUsername("huangmingjie");
             user.setId(1L);
             Boolean b0 = esService.insertOrUpdate(user);
-            if (b0){
+            if (b0) {
                 resonse = "success";
-            }else {
+            } else {
                 resonse = "fail";
             }
-        }else {
+        } else {
             resonse = "fail";
         }
 
@@ -68,12 +68,12 @@ public class CountrySearchController {
     }
 
     @RequestMapping(value = "/query")
-    public User query(@RequestParam Long id){
+    public User query(@RequestParam Long id) {
         return repository.findUserById(id);
     }
 
     @RequestMapping(value = "/allUser")
-    public List<com.demo1.testes.mode.User> selectAllUser (){
+    public List<com.demo1.testes.mode.User> selectAllUser() {
         return testHikariService.selectAllUser();
     }
 }

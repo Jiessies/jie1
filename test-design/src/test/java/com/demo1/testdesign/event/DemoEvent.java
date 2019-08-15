@@ -6,6 +6,7 @@ public class DemoEvent extends ApplicationEvent {
     private static final long serialVersionUID = 1L;
 
     private String message;
+
     public DemoEvent(Object source, String message) {
         super(source);
         this.message = message;

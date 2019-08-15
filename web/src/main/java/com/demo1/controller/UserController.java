@@ -17,8 +17,8 @@ public class UserController {
     private UserService userService;
 
     @RequestMapping(value = "/add", produces = {"application/json;charset=UTF-8"})
-    public R<Integer> addUser(User user){
-        user= new User();
+    public R<Integer> addUser(User user) {
+        user = new User();
         user.setPhone("133443545");
         user.setPassword("123443");
         user.setUserName("用户名");
@@ -27,7 +27,7 @@ public class UserController {
 
     @GetMapping("/all")
     public Object findAllUser(@RequestParam(name = "pageNum", required = false, defaultValue = "1") int pageNum,
-                              @RequestParam(name = "pageSize", required = false, defaultValue = "10") int pageSize){
-        return userService.findAllUser(pageNum,pageSize);
+                              @RequestParam(name = "pageSize", required = false, defaultValue = "10") int pageSize) {
+        return userService.findAllUser(pageNum, pageSize);
     }
 }

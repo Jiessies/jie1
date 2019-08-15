@@ -38,6 +38,7 @@ public class R<T> implements Serializable {
         this.setStatus(status);
         return this;
     }
+
     //Constructors
     public R() {
     }

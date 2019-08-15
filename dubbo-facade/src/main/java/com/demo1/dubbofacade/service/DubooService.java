@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface DubooService {
     public String getName(String name);
+
     public List<DubboUser> findAllUser();
 }

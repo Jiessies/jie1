@@ -10,7 +10,7 @@ public class DemoPublisher {
     @Autowired
     ApplicationContext applicationContext;
 
-    public void publish(String message){
+    public void publish(String message) {
         //发布事件
         applicationContext.publishEvent(new DemoEvent(this, message));
     }

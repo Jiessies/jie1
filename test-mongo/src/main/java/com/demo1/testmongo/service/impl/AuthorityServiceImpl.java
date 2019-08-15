@@ -22,8 +22,8 @@ public class AuthorityServiceImpl implements AuthorityService {
     }
 
     @Override
-    public List<Authority> findAll(int page,int limit) {
-        Pageable pageable = new PageRequest(page-1,limit);
+    public List<Authority> findAll(int page, int limit) {
+        Pageable pageable = new PageRequest(page - 1, limit);
         PageImpl<Authority> authorityPage = authorityRepository.findAll(pageable);
         return authorityPage.getContent();
     }

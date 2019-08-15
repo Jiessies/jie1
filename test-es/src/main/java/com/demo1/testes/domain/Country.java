@@ -14,6 +14,6 @@ public class Country implements Serializable {
     @Id
     private Integer id;
 
-    @Field(searchAnalyzer = "ik_max_word",analyzer = "ik_smart")
+    @Field(searchAnalyzer = "ik_max_word", analyzer = "ik_smart")
     private String name;
 }

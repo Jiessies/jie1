@@ -18,13 +18,13 @@ public class DubboController {
     private DubooService dubooService;
 
     @GetMapping(value = "/getName")
-    public String getName(@RequestParam String name){
+    public String getName(@RequestParam String name) {
 
         return dubooService.getName(null);
     }
 
     @GetMapping(value = "/getuser")
-    public List<DubboUser> getUser(){
+    public List<DubboUser> getUser() {
         return dubooService.findAllUser();
     }
 }

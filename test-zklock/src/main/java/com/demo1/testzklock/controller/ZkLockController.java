@@ -13,7 +13,7 @@ public class ZkLockController {
     private ZkLockService zkLockService;
 
     @RequestMapping(value = "/lock")
-    public String zkLocktest(){
+    public String zkLocktest() {
         try {
             zkLockService.acquireLockTest();
         } catch (Exception e) {

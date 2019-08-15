@@ -11,7 +11,10 @@ import java.util.List;
 @Repository
 public interface AuthorityRepository extends MongoRepository<Authority, String> {
     public PageImpl<Authority> findAll(Pageable pageable);
+
     public List<Authority> findAll();
+
     public Authority getById(String id);
+
     public void deleteById(String id);
 }

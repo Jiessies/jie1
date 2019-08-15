@@ -15,6 +15,7 @@ public class ShardReentrantLockComponent {
 
     /**
      * 该方法为模板方法，获得锁后回调 BaseLockHandler 中的 handler 方法
+     *
      * @param baseLockHandler
      * @param <T>
      * @return
@@ -37,7 +38,7 @@ public class ShardReentrantLockComponent {
             } catch (Exception e) {
                 e.printStackTrace();
             }
-            if(acquire) {
+            if (acquire) {
                 //获得锁后回调具体的业务逻辑
                 return baseLockHandler.handler();
             } else {
@@ -46,7 +47,7 @@ public class ShardReentrantLockComponent {
             }
         } finally {
             try {
-                if(acquire) {
+                if (acquire) {
                     //释放锁
                     lock.release();
                 }

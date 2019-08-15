@@ -8,6 +8,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
@@ -20,9 +21,9 @@ public class UserServiceImpl implements UserService {
     public R<Integer> addUser(User user) {
         R<Integer> result = new R<Integer>();
         Integer insertNum = userMapper.insertSelective(user);
-        if(insertNum>0){
+        if (insertNum > 0) {
             result.setStatus(0);
-        }else{
+        } else {
             result.setStatus(1);
         }
         result.setData(insertNum);

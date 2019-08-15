@@ -11,7 +11,7 @@ public class SemaphoreService {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "500"),
             @HystrixProperty(name = "execution.isolation.semaphore.maxConcurrentRequests", value = "9"),
             @HystrixProperty(name = "fallback.isolation.semaphore.maxConcurrentRequests", value = "20"),
-            @HystrixProperty(name = "execution.isolation.strategy", value ="SEMAPHORE")
+            @HystrixProperty(name = "execution.isolation.strategy", value = "SEMAPHORE")
     })
     public String hi(String name) {
         try {

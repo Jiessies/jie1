@@ -8,6 +8,6 @@ public class DemoListener implements ApplicationListener<DemoEvent> {
     @Override
     public void onApplicationEvent(DemoEvent demoEvent) {
         String msg = demoEvent.getMessage();
-        System.out.println("接收到的信息是："+msg);
+        System.out.println("接收到的信息是：" + msg);
     }
 }

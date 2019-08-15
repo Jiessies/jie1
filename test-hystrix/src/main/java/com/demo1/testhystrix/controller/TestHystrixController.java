@@ -18,13 +18,13 @@ public class TestHystrixController {
     private SemaphoreService semaphoreService;
 
     @RequestMapping(value = "/test")
-    public String testHys(@RequestParam(value = "name") String name){
+    public String testHys(@RequestParam(value = "name") String name) {
         String response = hystrixService.testHys(name);
         return response;
     }
 
     @RequestMapping(value = "/semap")
-    public String hi(@RequestParam(value = "name") String name){
+    public String hi(@RequestParam(value = "name") String name) {
         String response = semaphoreService.hi(name);
         return response;
     }

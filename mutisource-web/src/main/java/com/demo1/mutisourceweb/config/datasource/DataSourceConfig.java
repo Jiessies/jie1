@@ -68,6 +68,7 @@ public class DataSourceConfig {
     /**
      * 根据数据源创建SqlSessionFactory
      * typeAliasesPackage ,mapperLocations为配置文件里面的配置信息
+     *
      * @Value("${mybatis.typeAliasesPackage}") String typeAliasesPackage,
      * @Value("${mybatis.mapperLocations}") String mapperLocations
      */

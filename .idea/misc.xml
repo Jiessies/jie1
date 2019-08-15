@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/demo-service" />
-    <file type="web" url="file://$PROJECT_DIR$/demo-web" />
-  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/web/pom.xml" />
-        <option value="$PROJECT_DIR$/service/pom.xml" />
-        <option value="$PROJECT_DIR$/dao/pom.xml" />
-        <option value="$PROJECT_DIR$/domain/pom.xml" />
-        <option value="$PROJECT_DIR$/utils/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-facade/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-service/pom.xml" />
-        <option value="$PROJECT_DIR$/dubbo-web/pom.xml" />
-        <option value="$PROJECT_DIR$/mutisource-web/pom.xml" />
-        <option value="$PROJECT_DIR$/jietest-spring-boot-starter/pom.xml" />
-        <option value="$PROJECT_DIR$/test-mongo/pom.xml" />
-        <option value="$PROJECT_DIR$/test-es/pom.xml" />
-        <option value="$PROJECT_DIR$/demo-web/pom.xml" />
-        <option value="$PROJECT_DIR$/demo-service/pom.xml" />
-        <option value="$PROJECT_DIR$/test-hystrix/pom.xml" />
-        <option value="$PROJECT_DIR$/test-zuul/pom.xml" />
-        <option value="$PROJECT_DIR$/test-nacos/pom.xml" />
-        <option value="$PROJECT_DIR$/test-zklock/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatis-plus/pom.xml" />
-        <option value="$PROJECT_DIR$/test-design/pom.xml" />
       </list>
     </option>
   </component>

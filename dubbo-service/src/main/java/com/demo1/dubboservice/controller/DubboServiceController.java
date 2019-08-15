@@ -17,7 +17,7 @@ public class DubboServiceController {
     private DubooService dubooService;
 
     @GetMapping(value = "/getuser")
-    public List<DubboUser> getAllUser(){
+    public List<DubboUser> getAllUser() {
         return dubooService.findAllUser();
     }
 }

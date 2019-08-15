@@ -17,7 +17,7 @@ public class CountrySearchServiceImpl implements CountrySearchService {
 
     @Override
     public Page<Country> getCountryByName(String name) {
-        Page<Country> countrys = countrySearchRepository.findCountryByName("测试",  PageRequest.of(0, 10));
+        Page<Country> countrys = countrySearchRepository.findCountryByName("测试", PageRequest.of(0, 10));
         return countrys;
     }
 }

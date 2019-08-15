@@ -9,7 +9,9 @@ import java.util.List;
 
 public interface CountrySearchRepository extends ElasticsearchRepository<Country, Long> {
     List<Country> findCountryByName(String name);
+
     //使用 Page<Country> countrys = countrySearchRepository.findByName("测试",  PageRequest.of(0, 10)); //分页是从0开始的
     Page<Country> findCountryByName(String name, Pageable pageable);
+
     Country findCountryById(String name);
 }

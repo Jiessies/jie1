@@ -23,7 +23,7 @@ public class SysUserController {
 
 
     @GetMapping(value = "/test")
-    public IPage<SysUser> test(){
+    public IPage<SysUser> test() {
         //测试逻辑删除功能
 //        SysUser sysUser = sysUserService.getById(1);
 
@@ -54,7 +54,7 @@ public class SysUserController {
     }
 
     @GetMapping(value = "/batch")
-    public String batch(){
+    public String batch() {
 
         ArrayList list = new ArrayList();
 
@@ -101,7 +101,7 @@ public class SysUserController {
     }
 
     @GetMapping(value = "/update")
-    public String updateBatch(){
+    public String updateBatch() {
 
 
         List list = new ArrayList();
@@ -120,7 +120,6 @@ public class SysUserController {
         sysUser3.setId(20);
         sysUser3.setUsername("huangmingjie");
         list.add(sysUser3);
-
 
 
         Boolean b = sysUserService.updateBatchById(list);

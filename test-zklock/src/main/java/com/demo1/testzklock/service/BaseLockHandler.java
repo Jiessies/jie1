@@ -15,12 +15,14 @@ public abstract class BaseLockHandler<T> {
 
     /**
      * 具体的业务实现逻辑，重写该方法
+     *
      * @return
      */
     public abstract T handler();
 
     /**
      * 返回加锁的路径
+     *
      * @return
      */
     public String getPath() {
@@ -29,6 +31,7 @@ public abstract class BaseLockHandler<T> {
 
     /**
      * 返回加锁的超时时间
+     *
      * @return
      */
     public int getTimeOut() {
@@ -37,6 +40,7 @@ public abstract class BaseLockHandler<T> {
 
     /**
      * 时间单位
+     *
      * @return
      */
     public TimeUnit getTimeUnit() {
