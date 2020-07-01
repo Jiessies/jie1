@@ -41,7 +41,7 @@
         <skipTests>true</skipTests>
         <pagehelper.version>1.2.5</pagehelper.version>
         <druid.version>1.1.9</druid.version>
-        <mysql-version>5.1.46</mysql-version>
+        <mysql-version>8.0.16</mysql-version>
         <commons-lang3-version>3.4</commons-lang3-version>
         <commons-pool2-version>2.5.0</commons-pool2-version>
         <fastjson-version>1.2.47</fastjson-version>
