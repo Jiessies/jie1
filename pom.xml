@@ -44,7 +44,7 @@
         <mysql-version>5.1.46</mysql-version>
         <commons-lang3-version>3.4</commons-lang3-version>
         <commons-pool2-version>2.5.0</commons-pool2-version>
-        <fastjson-version>1.2.47</fastjson-version>
+        <fastjson-version>1.2.83</fastjson-version>
     </properties>
 
     <!--只是声明依赖方便统一版本号，并不实现引入，因此子项目需要显示的声明需要用的依赖,子类不用加version除非插件-->
